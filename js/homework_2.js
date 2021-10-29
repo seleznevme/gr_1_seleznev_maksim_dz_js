@@ -56,11 +56,11 @@ if ((day % 1) > 0) {
 	day = day.toFixed(0);
 }
 //основной код
-if ((day % 10 > 1) && (day % 10 < 5)) {
+if ((day % 10 > 1) && (day % 10 < 5) && (day % 100 < 5)) {
 	day = day + ' дня';	
 }
 else {
-	if ((day % 10) == 1) {
+	if ((day % 10) == 1  && (day % 100 == 1)) {
 		day = day + ' день';
 	}
 	else {
