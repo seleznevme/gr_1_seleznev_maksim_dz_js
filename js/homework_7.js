@@ -65,9 +65,9 @@ function Create_calculator (name) {
 }
 //проверка
 let calc = new Create_calculator ('Мой калькулятор');
-calc.sum (2, 3, 4, 7, 11, 17);
-calc.mult (2, 3, 4, 7, 11, 17);
-calc.subtract (5, 3);
-calc.divide (12, 3);
-calc.history.console ();
-calc.history.clear ();
+calc.sum (2, 3, 4, 7, 11, 17); //сумма
+calc.mult (2, 3, 4, 7, 11, 17); //умножение
+calc.subtract (5, 3); //вычитание
+calc.divide (12, 3); //деление
+calc.history.console (); //вывожу историю в консоль
+calc.history.clear (); //очищаю историю
