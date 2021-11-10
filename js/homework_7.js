@@ -4,7 +4,7 @@ function Create_calculator (name) {
 	date = '(' + date.getDate() + '.' + (date.getMonth()+1) + '.' + date.getFullYear() + ' ' +  date.getHours() + ':' + date.getMinutes() + ')';	
 	this.name = name;
 	this.sum = function(...arrg) {
-		let summ = arrg[0];
+		let summ = 0;
 		for (let i = 0; i <= arrg.length - 1; i++) {
 			if (isNaN(arrg[i])){
 				summ = false;
