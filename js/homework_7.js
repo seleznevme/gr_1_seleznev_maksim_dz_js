@@ -18,7 +18,7 @@ function Create_calculator (name) {
 		history.push(name + ' ' + date + ': сумма = ' + summ + ',(' + arrg + ')');
 	};
 	this.mult = function(...arrg) {
-		let mult = arrg[0];
+		let mult = 1;
 		for (let i = 0; i <= arrg.length - 1; i++) {
 			if (isNaN(arrg[i])){
 				mult = false;
