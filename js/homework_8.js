@@ -3,8 +3,7 @@ function add_div (height, width, color) { //функция создания div 
 	if (isNaN(height) || isNaN(width) || typeof(color) != 'string') {
 		throw 'ошибка входных параметров';
 	}
-	else {
-		document.body.style.removeProperty('background');
+	else {		
 		let div = document.createElement('div');
 		document.body.append(div);
 		div.style.height = height + 'px';
@@ -68,6 +67,7 @@ function print_div_options () { //функция вывода параметро
 	}
 }
 setTimeout(function () {
+	document.body.style.removeProperty('background'); //удаление фона от предидущего задания
 	add_div (150, 230, 'blue'); //вызов функции создания div по заданным параметрам
 	add_div (275, 350, 'fuchsia'); //вызов функции создания div по заданным параметрам
 	print_div_options (); //вызов функции вывода параметров div
