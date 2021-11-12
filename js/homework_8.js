@@ -32,6 +32,9 @@ setTimeout(function () {
 				if ((i+1) % 3 == 0) {
 					arr[i].style.background = 'red';
 				}
+				else {
+					arr[i].style.background = 'yellow';	
+				}
 			}
 			// Задача 4
 			setTimeout(function () {
