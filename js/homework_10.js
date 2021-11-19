@@ -26,10 +26,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
   }
 })
 // функция создания заготовки карточки пользователя
-function gen_card (number) {
-  let div = document.createElement('div');
-  document.body.append(div);
-  div.className = 'wrapper';
+function gen_card (number, div) {  
   let div_main = document.createElement('div');  
   div.appendChild(div_main);
   div_main.className = 'main';
@@ -97,6 +94,9 @@ function gen_card (number) {
   button_inf.textContent = 'More';
   button_inf.className = 'more';
 }
-for(let i = 0; i <= 9; i++){
-  gen_card (i);
+let wrapper = document.createElement('div');
+document.body.append(wrapper);
+div.className = 'wrapper';
+for(let i = 0; i <= 9; i++){   
+  gen_card (i, wrapper);
 }
