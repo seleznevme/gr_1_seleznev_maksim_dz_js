@@ -96,7 +96,7 @@ function gen_card (number, div) {
 }
 let wrapper = document.createElement('div');
 document.body.append(wrapper);
-div.className = 'wrapper';
+wrapper.className = 'wrapper';
 for(let i = 0; i <= 9; i++){   
   gen_card (i, wrapper);
 }
