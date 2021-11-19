@@ -28,7 +28,8 @@ fetch('https://jsonplaceholder.typicode.com/users')
 // функция создания заготовки карточки пользователя
 function gen_card (number) {
   let div = document.createElement('div');
-  document.body.append(div);    
+  document.body.append(div);
+  div.className = 'cover';
   let div_main = document.createElement('div');  
   div.appendChild(div_main);
   div_main.className = 'main';
