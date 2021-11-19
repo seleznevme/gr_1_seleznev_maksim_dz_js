@@ -5,8 +5,8 @@ let time_step = 3;
 let delta_x = 1; //смещение шара по x
 let delta_y = 1; //смещение шара по y
 let n_string_skittles = 4;
-let h_skittle = 20;
-let n_skittle = 10; //максимальное количество кеглей в строке
+let h_skittle = 40;
+let n_skittle = 5; //максимальное количество кеглей в строке
 let width_skittle = (window.innerWidth - 2 * h_wall) / (2 * n_skittle);
 let game_obgects = [];
 //Функция-конструктор создания обьектов
