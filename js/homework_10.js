@@ -87,3 +87,7 @@ function gen_data (i, json) {
   let button = div_main.getElementsByClassName('more');    
   button[0].setAttribute ('onclick', 'alert('+ '\'' + 'city: ' + json[i].address.city + '\'' +')');
 }
+let wrapper = document.createElement('div');
+document.body.append(wrapper);
+wrapper.className = 'wrapper';
+
