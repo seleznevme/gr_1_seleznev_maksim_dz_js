@@ -122,20 +122,22 @@ document.addEventListener('keydown', function(event) {
 	}
 });
 gen_skittles ();
+let fin = 0;
 function game_time () {
-	for (let i = 0; i <= game_obgects.length-1; i++) {
-		if (game_obgects[i].name == 'ball') {
-			game_obgects[i].x = game_obgects[i].x + delta_x;
-			game_obgects[i].y = game_obgects[i].y + delta_y;
-			if (game_obgects[i].y > (window.innerHeight - game_obgects[i].height)) {
-				alert ('Игра окончена');
-				break;
-				return;
+	if (fin == 0) {
+		for (let i = 0; i <= game_obgects.length-1; i++) {
+			if (game_obgects[i].name == 'ball') {
+				game_obgects[i].x = game_obgects[i].x + delta_x;
+				game_obgects[i].y = game_obgects[i].y + delta_y;
+				if (game_obgects[i].y > (window.innerHeight - game_obgects[i].height)) {
+					alert ('Игра окончена');
+					fin = 1;
+				}		
 			}		
-		}		
-	}	
-	check_collision ()	
-	render ();
-	setTimeout(game_time, time_step);
+		}	
+		check_collision ()	
+		render ();
+		setTimeout(game_time, time_step);
+	}
 }
 game_time ();
